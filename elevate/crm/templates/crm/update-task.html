@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'crm/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+    <h2>update your Tasks Here</h2>
+    <p>Task Form</p>
+
+    <form method="POST" autocomplete="off" >
+
+        {% csrf_token %}
+        {{updateTask.as_p}}
+
+        <input type="submit" value="Update"/>
+    </form>
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+ <h1>Website under development</h1>
+
+ <hr>
+ <a href="{% url 'home' %}">Home</a>
+ &nbsp;
+ <a href="{% url 'task-form' %}">Create a Task</a>
+
+ &nbsp;
+ <a href="{% url 'task' %}">View Tasks</a>
+
+ &nbsp;
+ <a href="{% url 'register' %}">Register</a>
+
+
+<hr>
+ {% block content %}
+
+
+ {%endblock%}
+
+<script src="{% static 'js/app.js' %}"></script>>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'crm/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+    <h2>Delete your Tasks Here</h2>
+
+    <hr>
+    <form method="POST" autocomplete="off" >
+
+        {% csrf_token %}
+        <p>are you sure you want to delete?</p>
+        <br>
+        <input type="submit" value="Delete Task"/>
+    </form>
+
+    {% endblock %}
+</body>
+</html>
