@@ -8,8 +8,8 @@
 <body>
     {% block content %}
 
-    <h3>Register here...</h3>
-    <p>This is where you can register your account</p>
+    <h3>Login here...</h3>
+    <p>This is where you can login to your account</p>
 
     <hr>
 
@@ -17,9 +17,9 @@
 
         {% csrf_token %}
 
-        {{RegistrationForm.as_p}}
+        {{LoginForms.as_p}}
 
-        <input type="submit" value="Create Account"/>
+        <input type="submit" value="Login"/>
     </form>>
 
     {% endblock %}

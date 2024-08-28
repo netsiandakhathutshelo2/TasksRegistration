@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'crm/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+
+    <h3>Dashboard</h3>
+    <p>User information</p>
+
+    <hr>
+    &nbsp;
+ <a href="{% url 'log-out' %}">Logout</a>
+
+    {% endblock %}
+
+
+</body>
+</html>
